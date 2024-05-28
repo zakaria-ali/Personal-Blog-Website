@@ -1,0 +1,139 @@
+/* Define  variables */
+:root {
+  --primary-texts-color: #1f1f1f;
+  --primary-nav-footer-background-color: #f0efeb;
+  --primary-website-background-color: #f9ecda61;
+}
+
+/* General Style */
+body {
+  margin: 0;
+  background-color: var(--primary-website-background-color);
+  color: var(--primary-texts-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav,
+footer {
+  background-color: var(--primary-nav-footer-background-color);
+}
+
+/* Nav Style */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav u {
+  font-size: 30px;
+}
+
+/* Cards Style */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 8rem;
+  grid-gap: 3rem;
+}
+
+.cards .card {
+  position: relative;
+  border: 4px solid #9f95958c;
+  border-radius: 10px;
+  padding: 0 1rem 1rem;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  /*For The Image Effect*/
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cards .crad-texts {
+  height: 262px;
+  overflow: hidden;
+}
+
+.cards .card-texts h3 {
+  margin: 0;
+}
+
+.cards .card .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards img {
+  width: 532px;
+  position: absolute;
+  height: 316px;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.cards .card:hover img {
+  transform: translateY(-100%);
+}
+
+/* Footer Style */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Query For Small Screens */
+@media screen and (max-width:768px) {
+
+  /* Nav Style */
+  nav {
+    padding: 1rem 0 0;
+  }
+
+  /* Cards Style */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .cards .card {
+    width: 300px;
+  }
+
+  .cards img {
+    width: 332px;
+  }
+
+  /* Footer Style */
+  footer {
+    padding: 5px;
+  }
+}
+
+/* Media Query For Medium Screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Cards Style */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
+
+  .cards .card {
+    width: 300px;
+  }
+}

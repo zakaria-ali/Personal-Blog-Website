@@ -1,0 +1,130 @@
+/* Define  variables */
+:root {
+    --primary-texts-color: #1f1f1f;
+    --primary-nav-footer-background-color: #f0efeb;
+    --primary-website-background-color: #f9ecda61;
+}
+
+/* General Style */
+body {
+    color: var(--primary-texts-color);
+    background-color: var(--primary-website-background-color);
+    margin: 0;
+}
+
+a {
+    color: var(--primary-texts-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav,
+footer {
+    background-color: var(--primary-nav-footer-background-color);
+}
+
+/* Nav Style */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    grid-area: nv;
+}
+
+nav u {
+    font-size: 30px;
+}
+
+/* Article Style */
+article {
+    margin: 2rem 4rem;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p {
+    font-size: 20px;
+}
+
+/* Experience Article Style */
+.Experience li strong {
+    font-size: 20px;
+}
+
+.Experience li {
+    width: 500px;
+}
+
+/* Skills Article Style */
+.Skills ul {
+    justify-content: center;
+}
+
+.Skills li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 2.2em 2.2rem 0;
+    width: 100px;
+}
+
+/* Footer Style */
+footer {
+    padding: 20px;
+    text-align: center;
+    grid-area: ft;
+}
+
+/* Media Query For Small Screens */
+@media screen and (max-width:768px) {
+
+    /* Nav Style */
+    nav {
+        padding: 1rem 0 0;
+    }
+
+    /* Article Style */
+    article {
+        margin: 2rem 1rem;
+    }
+
+    /* Skills Article Style */
+    .Skills ul {
+        justify-content: space-between;
+    }
+
+    /* Footer Style */
+    footer {
+        padding: 5px;
+    }
+}
+
+/* Media Query For Medium Screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Experience Article Style */
+    .Experience ul {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+}

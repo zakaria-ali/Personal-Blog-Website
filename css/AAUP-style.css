@@ -1,0 +1,309 @@
+/* Define  variables */
+:root {
+    --primary-texts-color: #1f1f1f;
+    --primary-nav-footer-background-color: #f0efeb;
+    --primary-website-background-color: #f9ecda61;
+}
+
+/* General Style */
+body {
+    color: var(--primary-texts-color);
+    background-color: var(--primary-website-background-color);
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "nv nv nv nv nv nv nv nv"
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "sec sec sec sec sec sec sec sec"
+        "ft ft ft ft ft ft ft ft";
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: var(--primary-texts-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav,
+footer {
+    background-color: var(--primary-nav-footer-background-color);
+}
+
+/* Nav Style */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    grid-area: nv;
+}
+
+nav u {
+    font-size: 30px;
+}
+
+/* Header Style */
+header {
+    grid-area: hd;
+    display: flex;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+header img {
+    width: 900px;
+    height: 340px;
+}
+
+header .title h1 {
+    font-size: 50px;
+    margin: 4rem 0 2rem;
+}
+
+header .title small {
+    font-size: 20px;
+}
+
+/* Aside Style */
+aside {
+    grid-area: sd;
+    margin: 0 0 0 2rem;
+}
+
+aside p:first-child {
+    margin: 11rem 0 0.6rem;
+    font-size: 20px;
+    font-weight: 600;
+    text-wrap: balance;
+}
+
+aside button {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+aside p:last-child {
+    margin: 2rem 0;
+    font-size: 18px;
+}
+
+/* Main Style */
+main {
+    grid-area: main;
+    margin: 0 2rem;
+}
+
+main p:first-child {
+    font-size: 25px;
+}
+
+main p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+main img {
+    width: 730px;
+}
+
+main figcaption {
+    color: #958c8c;
+}
+
+main blockquote {
+    margin: 2rem 0;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/* Projects Style */
+.projects {
+    grid-area: sec;
+    padding: 0 2rem;
+}
+
+.projects h1 {
+    font-size: 30px;
+}
+
+.projects .card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects img {
+    border-radius: 10px;
+}
+
+.projects .card,
+.projects img {
+    width: 300px;
+}
+
+.projects .card a:hover {
+    text-decoration: none;
+}
+
+.projects figcaption {
+    background-color: #fff;
+    width: fit-content;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Footer Style */
+footer {
+    padding: 20px;
+    text-align: center;
+    grid-area: ft;
+}
+
+/* Media Query For Small Screens */
+@media screen and (max-width:768px) {
+
+    /* General Style */
+    body {
+        grid-template-areas:
+            "nv nv nv nv nv nv nv nv"
+            "hd hd hd hd hd hd hd hd"
+            "sd sd sd sd sd sd sd sd"
+            "main main main main main main main main"
+            "sec sec sec sec sec sec sec sec"
+            "ft ft ft ft ft ft ft ft";
+    }
+
+    /* Nav Style */
+    nav {
+        padding: 1rem 0 0;
+    }
+
+    /* Header Style */
+    header {
+        margin: 2rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header .title h1 {
+        font-size: 30px;
+        margin: 0 0 2rem;
+    }
+
+    header .title small {
+        font-size: 15px;
+    }
+
+    /* Aside Style */
+    aside {
+        margin: 2rem;
+    }
+
+    aside p:first-child {
+        margin: 0 0 0.6rem;
+        font-size: 23px;
+    }
+
+    aside button {
+        font-size: 15px;
+    }
+
+    aside p:last-child {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 2rem 0 0;
+    }
+
+    /* Main Style */
+    main p {
+        font-size: 19px;
+    }
+
+    main img {
+        width: 280px;
+    }
+
+    /* Projects Style */
+    .projects {
+        padding: 0;
+        margin: auto;
+    }
+
+    .projects h1 {
+        text-align: center;
+    }
+
+    .projects .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .projects figcaption {
+        font-size: 16px;
+    }
+
+    /* Footer Style */
+    footer {
+        padding: 5px;
+    }
+}
+
+/* Media Query For Medium Screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /* Header Style */
+    header img {
+        width: 500px;
+        height: 380px;
+    }
+
+    header .title h1 {
+        font-size: 45px;
+    }
+
+    /* Aside Style */
+    aside p:first-child {
+        font-size: 17px;
+    }
+
+    aside button {
+        font-size: 12px;
+    }
+
+    aside p:last-child {
+        font-size: 16px;
+    }
+
+    /* Main Style */
+    main p,
+    main blockquote {
+        font-size: 20px;
+    }
+
+    main img {
+        width: 612px;
+    }
+
+    /* Projects Style */
+    .projects h1 {
+        text-align: center;
+    }
+
+    .projects .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
