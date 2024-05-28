@@ -2,7 +2,7 @@
 @import url('index-style.css');
 @import url('AAUP-style.css');
 @import url('about-style.css');
-
+@import url('mediaQuery-style.css');
 
 /* Define  variables */
 :root {
