@@ -1,26 +1,4 @@
-/* Define  variables */
-:root {
-    --primary-texts-color: #1f1f1f;
-    --primary-nav-footer-background-color: #f0efeb;
-    --primary-website-background-color: #f9ecda61;
-}
-
 /* General Style */
-body {
-    color: var(--primary-texts-color);
-    background-color: var(--primary-website-background-color);
-    margin: 0;
-}
-
-a {
-    color: var(--primary-texts-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 ul,
 li {
     margin: 0;
@@ -35,33 +13,16 @@ ul {
     flex-wrap: wrap;
 }
 
-nav,
-footer {
-    background-color: var(--primary-nav-footer-background-color);
-}
-
-/* Nav Style */
-nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
-    grid-area: nv;
-}
-
-nav u {
-    font-size: 30px;
-}
-
 /* Article Style */
-article {
+.aboutArticle {
     margin: 2rem 4rem;
 }
 
-article h1 {
+.aboutArticle h1 {
     text-align: center;
 }
 
-article p {
+.aboutArticle p {
     font-size: 20px;
 }
 
@@ -87,34 +48,17 @@ article p {
     width: 100px;
 }
 
-/* Footer Style */
-footer {
-    padding: 20px;
-    text-align: center;
-    grid-area: ft;
-}
-
 /* Media Query For Small Screens */
 @media screen and (max-width:768px) {
 
-    /* Nav Style */
-    nav {
-        padding: 1rem 0 0;
-    }
-
     /* Article Style */
-    article {
+    .aboutArticle {
         margin: 2rem 1rem;
     }
 
     /* Skills Article Style */
     .Skills ul {
         justify-content: space-between;
-    }
-
-    /* Footer Style */
-    footer {
-        padding: 5px;
     }
 }
 
