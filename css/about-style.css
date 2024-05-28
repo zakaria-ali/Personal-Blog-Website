@@ -47,28 +47,3 @@ ul {
     margin: 0 2.2em 2.2rem 0;
     width: 100px;
 }
-
-/* Media Query For Small Screens */
-@media screen and (max-width:768px) {
-
-    /* Article Style */
-    .aboutArticle {
-        margin: 2rem 1rem;
-    }
-
-    /* Skills Article Style */
-    .Skills ul {
-        justify-content: space-between;
-    }
-}
-
-/* Media Query For Medium Screens */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-
-    /* Experience Article Style */
-    .Experience ul {
-        flex-direction: column;
-        gap: 3rem;
-        align-items: center;
-    }
-}
