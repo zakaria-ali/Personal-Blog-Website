@@ -1,15 +1,5 @@
-/* Define  variables */
-:root {
-    --primary-texts-color: #1f1f1f;
-    --primary-nav-footer-background-color: #f0efeb;
-    --primary-website-background-color: #f9ecda61;
-}
-
-/* General Style */
-body {
-    color: var(--primary-texts-color);
-    background-color: var(--primary-website-background-color);
-    margin: 0;
+/* Body Style */
+.aaupBody {
     display: grid;
     grid-template-areas:
         "nv nv nv nv nv nv nv nv"
@@ -23,31 +13,11 @@ figure {
     margin: 0;
 }
 
-a {
-    color: var(--primary-texts-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-nav,
-footer {
-    background-color: var(--primary-nav-footer-background-color);
-}
-
 /* Nav Style */
 nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
     grid-area: nv;
 }
 
-nav u {
-    font-size: 30px;
-}
 
 /* Header Style */
 header {
@@ -162,8 +132,6 @@ main blockquote {
 
 /* Footer Style */
 footer {
-    padding: 20px;
-    text-align: center;
     grid-area: ft;
 }
 
@@ -171,7 +139,7 @@ footer {
 @media screen and (max-width:768px) {
 
     /* General Style */
-    body {
+    .aaupBody {
         grid-template-areas:
             "nv nv nv nv nv nv nv nv"
             "hd hd hd hd hd hd hd hd"
@@ -179,11 +147,6 @@ footer {
             "main main main main main main main main"
             "sec sec sec sec sec sec sec sec"
             "ft ft ft ft ft ft ft ft";
-    }
-
-    /* Nav Style */
-    nav {
-        padding: 1rem 0 0;
     }
 
     /* Header Style */
@@ -252,11 +215,6 @@ footer {
 
     .projects figcaption {
         font-size: 16px;
-    }
-
-    /* Footer Style */
-    footer {
-        padding: 5px;
     }
 }
 
