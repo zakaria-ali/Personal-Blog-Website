@@ -1,0 +1,48 @@
+/* Index Cards Style */
+.indexCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 8rem;
+    grid-gap: 3rem;
+}
+
+.indexCards .indexCard {
+    position: relative;
+    border: 4px solid #9f95958c;
+    border-radius: 10px;
+    padding: 0 1rem 1rem;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    /*For The Image Effect*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.indexCards .crad-texts {
+    height: 262px;
+    overflow: hidden;
+}
+
+.indexCards .card-texts h3 {
+    margin: 0;
+}
+
+.indexCards .indexCard .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.indexCards img {
+    width: 532px;
+    position: absolute;
+    height: 316px;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.indexCards .indexCard:hover img {
+    transform: translateY(-100%);
+}
